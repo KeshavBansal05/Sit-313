@@ -1,0 +1,87 @@
+a{
+    padding: 10px;
+    
+}
+.navigationbar{
+    padding: 5px;
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.content{
+    position:absolute;
+    bottom: 110px;
+    width: 99%;
+    background-color: rgba(0, 0 , 0 , 0.7);
+    padding: 5px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.image:hover .content{
+    opacity: 1;
+}
+.profilephoto{
+    text-align: center;
+}
+.Project {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+
+.Project1, .Project2 {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
+.Project1 img, .Project2 img {
+    margin-right: 20px; 
+}
+
+.description {
+    max-width: 600px; 
+}
+
+a {
+    font-weight: bold; 
+}
+
+p {
+    color:lightgreen;
+}
+
+.Gallery , h3{
+    text-align: center;
+    margin-left: 25px;
+    color:lightgreen;
+}
+
+.My_Photos{
+    display : flex;
+}
+
+.column{
+    display : flex;
+}
+
+@media (max-width: 1000px) {
+    .My_Photos{
+        flex: row;
+    }
+}
+
+@media(max-width: 768px)
+{
+    .My_Photos{
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%; 
+    }
+}
